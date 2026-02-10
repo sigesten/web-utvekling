@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+header{
+    background: url('Images/scoops.jpg') ; 
+    padding: 100px ;
+    background-size: cover;
+}
+
+nav{
+    background-color: green;
+}
+nav a{
+    padding: 10px ;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: green;
+    color: white;
+}
+
+nav a:hover{
+    background-color: aquamarine;
+    color: black;
+}
+
+main{
+    padding-left: 20px;
+    
+}
+
+h1{
+    font: 30px verdana;
+    font-weight: bold;
+    color: green;
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Bild{
+    width: 30%;
+    border: 4px double black;
+}
+
+footer{
+    padding-left: 20px;
+    
+}
