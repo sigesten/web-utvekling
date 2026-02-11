@@ -22,7 +22,7 @@ section{
 }
 
 section:nth-child(4){
-    grid-area: D . E ;
+    grid-area: D;
 }
 section:nth-child(5){
     grid-area: E;
