@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+h1{
+    font-weight: normal;
+    font-style: italic;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blueviolet;
+}
+
+h2{
+    color:red;
+    font-size: 40px;
+}
+
+/* body{
+    background: url(images/lisa.jpg);
+    background-size: cover;
+} */
+
+article{
+    border: 3px blue solid;
+    display: flex;
+}
+
+section{
+    border: 3px red solid;
+    flex: 1;
+}
+
+#large{
+    flex: 2;
+}
