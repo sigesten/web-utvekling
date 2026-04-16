@@ -29,11 +29,11 @@ h1, h2, .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 1rem;
   color: #000060;
-  position: relative;
   border-bottom: 5px solid black;
-  background: url(images/Gemini_Generated_Image_7wz0ak7wz0ak7wz0.png);
+  background: url(../images/Gemini_Generated_Image_7wz0ak7wz0ak7wz0.png);
   background-size: cover;
   background-position: center;
 }
@@ -60,7 +60,7 @@ h1, h2, .logo {
   text-decoration: underline;
 }
 
-/* Hamburgermeny-knapp (dold som standard) */
+/* Hamburgermeny-knapp (visas endast på mobilen) */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -78,7 +78,7 @@ h1, h2, .logo {
 main {
   padding: 2%;
   color: black;
-  min-height: 100vh;
+  min-height: 90vh;
   text-align: center;
   background-color: antiquewhite;
 }
@@ -96,51 +96,56 @@ h1 {
 }
 
 /* ==========================================================================
-   4. ARTIKLAR & GRID-ELEMENT
-   Stilar för specifika artikelblock och deras bilder
+   4. SLIDESHOW
    ========================================================================== */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  overflow: hidden;
+}
 
-/* Artikel 1 */
-#art1p {
-  background-color: #333;
+.slide {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  margin-top: 30vh;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Flyttar tillbaka bilden till exakt mitt */
+  max-width: 100%;
+  height: 50vh;
+  
+}
+
+.slide.active {
+  opacity: 1; /* Endast den aktiva bilden syns */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Knapp-styling */
+button {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
   color: white;
-  padding: 2%;
-  border-radius: 10px 10px 0 0;
-  grid-area: a;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
 }
 
-#art1 {
-  text-align: center;
-  background-image: url(images/art1.avif);
-  min-height: 400px;
-  background-size: cover;
-  background-position: center;
-  color: aliceblue;
-  margin-bottom: 2%;
-  border-radius: 0 0 10px 10px;
-  grid-area: c;
-}
-
-/* Artikel 2 */
-#art2p {
-  background-color: #333;
-  color: white;
-  padding: 2%;
-  border-radius: 10px 10px 0 0;
-  grid-area: b;
-}
-
-#art2 {
-  text-align: center;
-  background-image: url(images/art2.avif);
-  min-height: 400px;
-  background-size: cover;
-  background-position: center;
-  color: aliceblue;
-  margin-bottom: 2%;
-  border-radius: 0 0 10px 10px;
-  grid-area: d;
-}
+.next { right: 0; }
+.prev { left: 0; }
 
 /* ==========================================================================
    5. FOOTER
@@ -175,9 +180,9 @@ footer {
     top: 100%;
     left: 0;
     right: 0;
+    flex-direction: column;
     background: #333;
     opacity: 0.98;
-    flex-direction: column;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease;
@@ -212,8 +217,25 @@ footer {
     border-radius: 5px;
   }
 
-  /* Marginaler för att skapa mellanrum mellan grid-elementen */
-  #art1p, #art1, #art2p, #art2 {
-    margin-right: 2%;
+  .slide {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-top: 40vh;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Flyttar tillbaka bilden till exakt mitt */
+    max-width: 80%;
+    height: 80vh;
+  }
+
+  button {
+    top: 80%;
+  }
+
+  main {
+    min-height: 120vh;
   }
 }

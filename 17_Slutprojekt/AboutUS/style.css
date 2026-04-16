@@ -41,6 +41,7 @@ h1, h2, .logo {
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
+  text-shadow: 2px 2px 1px rgb(209, 211, 218);
 }
 
 .menu {
@@ -71,7 +72,7 @@ h1, h2, .logo {
 
 /* ==========================================================================
    3. HUVUDINNEHÅLL (MAIN)
-   Design för sidans texter, artiklar och huvudlayout.
+   Design för sidans texter, artiklar, bilder och huvudlayout.
    ========================================================================== */
 
 main {
@@ -94,18 +95,32 @@ h1 {
   margin: 20px;
 }
 
+#mb1, #mb2, #mb3, #mb4{
+  min-height: 31vh;
+  background-size: cover;
+  border-radius: 1vh;
+}
+
+#mb1{
+  background-image: url(../images/Skärmbild\ 2026-04-09\ 131223.png);
+}
+#mb2{
+  background-image: url(../images/Skärmbild\ 2026-04-09\ 131231.png);
+}
+#mb3{
+  background-image: url(../images/Skärmbild\ 2026-04-09\ 131239.png);
+}
+#mb4{
+  background-image: url(../images/Skärmbild\ 2026-04-09\ 131251.png);
+}
+
 /* Behållare för textinnehåll */
 #mainP {
-  padding: 5px;
-  margin: 7px;
+  padding: 10px 20px 10px 20px;
+  margin: 5px;
   border-radius: 5px;
   border: #000060 2px solid;
   background: whitesmoke;
-}
-
-.mainP1 {
-  text-align: center;
-  padding: 3px;
 }
 
 /* Interaktiva element i main */
@@ -142,8 +157,8 @@ footer {
    Anpassningar för olika skärmstorlekar.
    ========================================================================== */
 
-/* --- MOBIL (Max 768px) --- */
-@media (max-width: 768px) {
+/* --- MOBIL (Max 660px) --- */
+@media (max-width: 660px) {
   .menu-toggle {
     display: block;
     color: #000060;
@@ -173,10 +188,69 @@ footer {
     border-radius: 5px;
     border-bottom: black 10px solid;
   }
+
+  .mainP1, .mainP2, .mainP3, .mainP4{
+    font-size: large;
+    padding: 5vh 5vh 5vh 5vh;
+    text-align: left;
+  }
+
+  #mb1, #mb2, #mb3, #mb4{
+    min-height: 30vh;
+    background-size: cover;
+    background-position: center;
+    
+  }
+}
+/* --- Tablet (Max 661px) (Min 1024) --- */
+@media (min-width: 661px) and (max-width: 1024px) {
+    .menu a {
+    color: black;
+    background: beige;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    opacity: 0.99;
+  }
+
+  #mainP{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "p1 mb1"
+    "mb2 p2"
+    "p3 mb3"
+    "mb4 p4"
+    ;
+  }
+
+  #mb1, #mb2, #mb3, #mb4{
+    min-height: 45vh;
+    background-size: cover;
+    background-position: center;
+    height: 95%;
+    width: 95%;
+  }
+
+  .mainP1, .mainP2, .mainP3, .mainP4{
+    font-size: large;
+    padding: 10vh 5vh 5vh 5vh;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+  }
+
+  .mainP1 { grid-area: p1; margin: 5px; }
+  .mainP2 { grid-area: p2; margin: 5px; }
+  .mainP3 { grid-area: p3; margin: 5px; }
+  .mainP4 { grid-area: p4; margin: 5px; }
+  #mb1 { grid-area: mb1; margin: 5px; }
+  #mb2 { grid-area: mb2; margin: 5px; }
+  #mb3 { grid-area: mb3; margin: 5px; }
+  #mb4 { grid-area: mb4; margin: 5px; }
 }
 
 /* --- DESKTOP (Min 768px) --- */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .menu a {
     color: black;
     background: beige;
@@ -184,4 +258,40 @@ footer {
     border-radius: 5px;
     opacity: 0.99;
   }
+
+  #mainP{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "p1 mb1"
+    "mb2 p2"
+    "p3 mb3"
+    "mb4 p4"
+    ;
+  }
+
+  #mb1, #mb2, #mb3, #mb4{
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    height: 95%;
+    width: 95%;
+  }
+
+  .mainP1, .mainP2, .mainP3, .mainP4{
+    font-size: x-large;
+    padding: 15vh 5vh 5vh 5vh;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+  }
+
+  .mainP1 { grid-area: p1; margin: 5px; }
+  .mainP2 { grid-area: p2; margin: 5px; }
+  .mainP3 { grid-area: p3; margin: 5px; }
+  .mainP4 { grid-area: p4; margin: 5px; }
+  #mb1 { grid-area: mb1; margin: 5px; }
+  #mb2 { grid-area: mb2; margin: 5px; }
+  #mb3 { grid-area: mb3; margin: 5px; }
+  #mb4 { grid-area: mb4; margin: 5px; }
 }

@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsiv Navbar</title>
+    <title>Auerum</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -29,16 +28,26 @@
         <h1>Welcome to modern art</h1>
         <p id="newart"> Explore the vast reality of modern art and dive deep in to exploring our latest art instalments today!</p>
         <section id="main_bilder">
-          <p id="art1p">Twisted delight</p>
-          <div id="art1"></div>
-          <p id="art2p">Sun of the tree</p>
-          <div id="art2"></div>
+          <div class="slides">
+            <div class="slide active"><img src="images/art1.avif" alt="bild 1"></div>
+            <div class="slide"><img src="images/art2.avif" alt="bild 2"></div>
+            <div class="slide"><img src="images/art3.avif" alt="bild 3"></div>
+            <div class="slide"><img src="images/art4.avif" alt="bild 4"></div>
+            <div class="slide"><img src="images/art5.avif" alt="bild 5"></div>
+            <div class="slide"><img src="images/art6.avif" alt="bild 6"></div>
+            <div class="slide"><img src="images/art7.avif" alt="bild 7"></div>
+            <div class="slide"><img src="images/art8.avif" alt="bild 8"></div>
+          </div>
+  
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
         </section>
 
     </main>
     <footer>
       <p id="copy1"> Auerum 2026 &copy; is Owned and Managed by Sulan AB Sweden <p>
     </footer>
+    <script src="slider.js"></script>
     <script src="menutoggle.js"></script>
   </body>
 </html>
