@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=La+Belle+Aurore&family=Playwrite+NO:wght@100..400&display=swap');
+
 /* ==========================================================================
    1. GLOBALA STILAR & RESET
    Nollställer marginaler och sätter grundläggande box-modell
@@ -42,7 +44,10 @@ h1, h2, .logo {
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
-  text-shadow: 2px 2px 1px rgb(209, 211, 218);
+  text-shadow: 2px 2px 1px rgb(193, 195, 202);
+  background-color: beige;
+  padding: 0px 3px 0px 3px;
+  border-radius: 10px;
 }
 
 .menu {
@@ -69,6 +74,33 @@ h1, h2, .logo {
   border: none;
   color: white;
   cursor: pointer;
+  background-color: beige;
+  padding: 0px 3px 0px 3px;
+  border-radius: 10px;
+  user-select: none;
+}
+
+#hamburgare{
+  background-image: url(images/burger-menu.svg);
+  background-size: cover;
+  min-height: 6vh;
+  min-width: 6vh;
+  z-index: 20000;
+}
+
+#hamburgare:hover{
+  background-image: url(images/burger-menu.svg);
+  background-size: cover;
+  min-height: 6.2vh;
+  min-width: 6.2vh;
+  z-index: 20000;
+}
+
+#hamburgare.open {
+  background-image: url(images/X-icon.png);
+  background-size: cover;
+  min-height: 6vh;
+  min-width: 6vh;
 }
 
 /* ==========================================================================
@@ -81,7 +113,7 @@ main {
   color: black;
   min-height: 90vh;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: rgb(250, 235, 215);
 }
 
 h1 {
@@ -94,6 +126,8 @@ h1 {
 
 #newart {
   margin: 20px;
+  font-family: "Playwrite NO", cursive;
+  font-style: normal;
 }
 
 /* ==========================================================================
@@ -213,7 +247,7 @@ footer {
   }
 
   .menu a {
-    color: black;
+    color: #000060;
     background: beige;
     padding: 5px 10px;
     border-radius: 5px;

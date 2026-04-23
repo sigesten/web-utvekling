@@ -39,7 +39,10 @@ h1, h2, .logo {
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
-  text-shadow: 2px 2px 1px rgb(209, 211, 218);
+  text-shadow: 2px 2px 1px rgb(193, 195, 202);
+  background-color: beige;
+  padding: 0px 3px 0px 3px;
+  border-radius: 10px;
 }
 
 .menu {
@@ -58,6 +61,7 @@ h1, h2, .logo {
   text-decoration: underline;
 }
 
+/* Hamburgermeny-knapp (visas endast på mobilen) */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -65,6 +69,33 @@ h1, h2, .logo {
   border: none;
   color: white;
   cursor: pointer;
+  background-color: beige;
+  padding: 0px 3px 0px 3px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+#hamburgare{
+  background-image: url(../images/burger-menu.svg);
+  background-size: cover;
+  min-height: 6vh;
+  min-width: 6vh;
+  z-index: 20000;
+}
+
+#hamburgare:hover{
+  background-image: url(../images/burger-menu.svg);
+  background-size: cover;
+  min-height: 6.2vh;
+  min-width: 6.2vh;
+  z-index: 20000;
+}
+
+#hamburgare.open {
+  background-image: url(../images/X-icon.png);
+  background-size: cover;
+  min-height: 6vh;
+  min-width: 6vh;
 }
 
 /* ==========================================================================
@@ -95,6 +126,13 @@ h1 {
    4. ARTIKLAR (BILDER OCH TEXTBLOCK)
    Här ligger alla dina art-id:n i ordning.
    ========================================================================== */
+
+/* --- Artikel main --- */
+
+.artp{
+  padding: 10px 5px 10px 5px;
+  margin: 2px;
+}
 
 /* --- Artikel 1 --- */
 #art1 {
@@ -262,10 +300,9 @@ footer {
 /* --- DESKTOP (Min 768px) --- */
 @media (min-width: 768px) {
   .menu a {
-    color: black;
+    color: #000060;
     background: beige;
-    padding: 5px 10px; 
-    opacity: 0.99;
+    padding: 5px 10px;
     border-radius: 5px;
   }
 
