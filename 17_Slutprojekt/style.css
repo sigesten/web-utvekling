@@ -50,6 +50,11 @@ h1, h2, .logo {
   border-radius: 10px;
 }
 
+#h2auerum{
+  text-decoration: none;
+  color: #000060;
+}
+
 .menu {
   list-style: none;
   display: flex;

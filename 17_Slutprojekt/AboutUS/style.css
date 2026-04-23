@@ -47,6 +47,11 @@ h1, h2, .logo {
   border-radius: 10px;
 }
 
+#h2auerum{
+  text-decoration: none;
+  color: #000060;
+}
+
 .menu {
   list-style: none;
   display: flex;
@@ -149,13 +154,11 @@ h1 {
   padding: 10px 20px 10px 20px;
   margin: 5px;
   border-radius: 5px;
-  border: #000060 2px solid;
   background: whitesmoke;
 }
 
 /* Interaktiva element i main */
 #conP {
-  border: #000060 2px solid;
   background-color: aliceblue;
   border-radius: 5px;
   transition: all 0.2s ease; 
@@ -164,6 +167,11 @@ h1 {
 #conP:hover {
   background-color: rgb(227, 243, 255);
   font-size: large;
+}
+
+#conPa{
+  text-decoration: none;
+  color: #000060;
 }
 
 /* ==========================================================================
@@ -281,7 +289,7 @@ footer {
 /* --- DESKTOP (Min 768px) --- */
 @media (min-width: 1025px) {
   .menu a {
-    color: black;
+    color: #000060;
     background: beige;
     padding: 5px 10px; 
     border-radius: 5px;

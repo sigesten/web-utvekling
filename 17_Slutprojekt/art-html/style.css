@@ -45,6 +45,11 @@ h1, h2, .logo {
   border-radius: 10px;
 }
 
+#h2auerum{
+  text-decoration: none;
+  color: #000060;
+}
+
 .menu {
   list-style: none;
   display: flex;
@@ -143,7 +148,7 @@ h1 {
 }
 
 #art1p {
-  background-color: wheat;
+  background-color: aliceblue;
   border-radius: 7px;
   margin-bottom: 10px;
 }
@@ -157,7 +162,7 @@ h1 {
 }
 
 #art2p {
-  background-color: wheat;
+  background-color: aliceblue;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -171,7 +176,7 @@ h1 {
 }
 
 #art3p {
-  background-color: wheat;
+  background-color: aliceblue;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -185,7 +190,7 @@ h1 {
 }
 
 #art4p {
-  background-color: wheat;
+  background-color: aliceblue;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -199,7 +204,7 @@ h1 {
 }
 
 #art5p {
-  background-color: wheat;
+  background-color: aliceblue;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -213,7 +218,7 @@ h1 {
 }
 
 #art6p {
-  background-color: wheat;
+  background-color: aliceblue;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -227,7 +232,7 @@ h1 {
 }
 
 #art7p {
-  background-color: wheat;
+  background-color: aliceblue;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -241,7 +246,7 @@ h1 {
 }
 
 #art8p {
-  background-color: wheat;
+  background-color: aliceblue;
   border-radius: 5px;
   margin-bottom: 10px;
 }

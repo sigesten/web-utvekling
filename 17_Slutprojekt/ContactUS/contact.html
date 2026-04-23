@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html lang="sv">
+
+  <!-- ==========================================================================
+     1. HEAD & METADATA
+     Teckenkodning, viewport, sidtitel och extern stilmall
+     ========================================================================== -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auerum</title>
+
+    <!-- Extern stilmall -->
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
 
+    <!-- ==========================================================================
+       2. NAVIGERING
+       Toppmeny med logotyp, navigeringslänkar och hamburgarmeny för mobil
+       ========================================================================== -->
     <nav class="navbar">
-      <div class="logo"><h2>Auerum</h2></div>
 
+      <!-- Logotyp / länk till startsidan -->
+      <div class="logo">
+        <a href="../index.html" id="h2auerum">
+          <h2 id="h2A">Auerum</h2>
+        </a>
+      </div>
+
+      <!-- Hamburgarmeny-knapp för mobila enheter -->
       <button class="menu-toggle" aria-expanded="false" aria-label="Open Menu">
         <div id="hamburgare"></div>
       </button>
 
+      <!-- Huvudmeny med navigeringslänkar -->
       <ul class="menu">
         <li><a href="../index.html">Home</a></li>
         <li><a href="../AboutUS/aboutUS.html">About us</a></li>
         <li><a href="../art-html/art.html">Art instalments</a></li>
         <li><a href="contact.html">Contact us</a></li>
       </ul>
+
     </nav>
+
+    <!-- ==========================================================================
+       3. HUVUDINNEHÅLL
+       Rubrik, kontaktinformation och bildsektion
+       ========================================================================== -->
     <main>
-        <h1>Contact us Today!</h1>
-        <section id="mainP">
-          <p class="conP">Get in touch</p>
-          <p class="conP">Email: contact@auerum-art.com</p>
-          <p class="conP">Phone: +46 73 845 92 17</p>
-          <p class="conP">Auerum — Where art meets meaning.</p>
-          <p class="conP">Sjövägen 49, bjäred Sweden.</p>
-        </section>
-        <section id="bildP"></section> 
+
+      <!-- Sidrubrik -->
+      <h1>Contact us Today!</h1>
+
+      <!-- Kontaktuppgifter -->
+      <section id="mainP">
+        <p class="conP">Get in touch</p>
+        <p class="conP">Email: contact@auerum-art.com</p>
+        <p class="conP">Phone: +46 73 845 92 17</p>
+        <p class="conP">Auerum — Where art meets meaning.</p>
+        <p class="conP">Sjövägen 49, bjäred Sweden.</p>
+      </section>
+
+      <!-- Bildsektion (fylls via CSS eller JavaScript) -->
+      <section id="bildP"></section>
+
     </main>
+
+    <!-- ==========================================================================
+       4. SIDFOT
+       Upphovsrättsinformation och ägandeinformation
+       ========================================================================== -->
     <footer>
-      <p id="copy1"> Auerum 2026 &copy; is Owned and Managed by Sulan AB Sweden </p>
+      <p id="copy1">Auerum 2026 &copy; is Owned and Managed by Sulan AB Sweden</p>
     </footer>
+
+    <!-- ==========================================================================
+       5. JAVASCRIPT
+       Menyväxling för hamburgarmeny
+       ========================================================================== -->
     <script src="menutoggle.js"></script>
+
   </body>
 </html>

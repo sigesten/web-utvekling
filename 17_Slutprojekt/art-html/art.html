@@ -1,83 +1,135 @@
 <!DOCTYPE html>
 <html lang="sv">
+
+  <!-- ==========================================================================
+     1. HEAD & METADATA
+     Teckenkodning, viewport, sidtitel och extern stilmall
+     ========================================================================== -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auerum</title>
+
+    <!-- Extern stilmall -->
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
 
+    <!-- ==========================================================================
+       2. NAVIGERING
+       Toppmeny med logotyp, navigeringslänkar och hamburgarmeny för mobil
+       ========================================================================== -->
     <nav class="navbar">
-      <div class="logo"><h2>Auerum</h2></div>
 
+      <!-- Logotyp / länk till startsidan -->
+      <div class="logo">
+        <a href="../index.html" id="h2auerum">
+          <h2 id="h2A">Auerum</h2>
+        </a>
+      </div>
+
+      <!-- Hamburgarmeny-knapp för mobila enheter -->
       <button class="menu-toggle" aria-expanded="false" aria-label="Öppna meny">
         <div id="hamburgare"></div>
       </button>
 
+      <!-- Huvudmeny med navigeringslänkar -->
       <ul class="menu">
         <li><a href="../index.html">Home</a></li>
         <li><a href="../AboutUS/aboutUS.html">About us</a></li>
         <li><a href="art.html">Art instalments</a></li>
         <li><a href="../ContactUS/contact.html">Contact us</a></li>
       </ul>
+
     </nav>
+
+    <!-- ==========================================================================
+       3. HUVUDINNEHÅLL
+       Rubrik och galleri med åtta konstinstallationer
+       ========================================================================== -->
     <main>
-        <h1>Our latest Art Instalments</h1>
-        <p id="newart"> </p>
-        <section id="artpmain">
-          <section id="art1p">
-            <h2>Twisted delight</h2>
-            <section id="art1" ></section>
-            <p class="artp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur! Iure quam magnam quo at atque, adipisci temporibus laboriosam provident pariatur quis quos perspiciatis. Corporis, cupiditate? Nam amet quos officia.</p>
-          </section>
-          
-          <section id="art2p">
-            <h2>Sun of the tree</h2>
-            <section id="art2"></section>
-            <p class="artp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur! Iure quam magnam quo at atque, adipisci temporibus laboriosam provident pariatur quis quos perspiciatis. Corporis, cupiditate? Nam amet quos officia.</p>
-          </section>
 
-          <section id="art3p">
-            <h2>Painted sea</h2>
-            <section id="art3"></section>
-            <p class="artp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur! Iure quam magnam quo at atque, adipisci temporibus laboriosam provident pariatur quis quos perspiciatis. Corporis, cupiditate? Nam amet quos officia.</p>
-          </section>
+      <!-- Sidrubrik och introduktionstext -->
+      <h1>Our latest Art Instalments</h1>
+      <p id="newart"></p>
 
-          <section id="art4p">
-            <h2>Waivy Colors</h2>
-            <section id="art4"></section>
-            <p class="artp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur! Iure quam magnam quo at atque, adipisci temporibus laboriosam provident pariatur quis quos perspiciatis. Corporis, cupiditate? Nam amet quos officia.</p>
-          </section>
+      <!-- Konstgalleri — wrapper för alla installationer -->
+      <section id="artpmain">
 
-          <section id="art5p">
-            <h2>Dotted splash</h2>
-            <section id="art5"></section>
-            <p class="artp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur! Iure quam magnam quo at atque, adipisci temporibus laboriosam provident pariatur quis quos perspiciatis. Corporis, cupiditate? Nam amet quos officia.</p>
-          </section>
-
-          <section id="art6p">
-            <h2>Starligt favorit</h2>
-            <section id="art6"></section>
-            <p class="artp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur! Iure quam magnam quo at atque, adipisci temporibus laboriosam provident pariatur quis quos perspiciatis. Corporis, cupiditate? Nam amet quos officia.</p>
-          </section>
-
-          <section id="art7p">
-            <h2>Dark souls</h2>
-            <section id="art7"></section>
-            <p class="artp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur! Iure quam magnam quo at atque, adipisci temporibus laboriosam provident pariatur quis quos perspiciatis. Corporis, cupiditate? Nam amet quos officia.</p>
-          </section>
-
-          <section id="art8p">
-            <h2>Happy cat</h2>
-            <section id="art8"></section>
-            <p class="artp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, tenetur! Iure quam magnam quo at atque, adipisci temporibus laboriosam provident pariatur quis quos perspiciatis. Corporis, cupiditate? Nam amet quos officia.</p>
-          </section>
+        <!-- Installation 1: Twisted Delight -->
+        <section id="art1p">
+          <h2>Twisted delight</h2>
+          <section id="art1"></section>
+          <p class="artp">A hypnotic spiral of black and gold pulls the eye inward, evoking a sense of motion frozen in time. The swirling contrasts of dark and warm tones create a tension between chaos and harmony — a piece that invites the viewer to lose themselves in its depth.</p>
         </section>
+
+        <!-- Installation 2: Sun of the Tree -->
+        <section id="art2p">
+          <h2>Sun of the tree</h2>
+          <section id="art2"></section>
+          <p class="artp">A solitary tree stands bold against a blazing sky of amber and cobalt, its silhouette a symbol of resilience and quiet strength. The dramatic interplay of warm and cool tones captures the fleeting beauty of dusk — a timeless moment suspended between day and night.</p>
+        </section>
+
+        <!-- Installation 3: Painted Sea -->
+        <section id="art3p">
+          <h2>Painted sea</h2>
+          <section id="art3"></section>
+          <p class="artp">Fierce strokes of crimson, teal, and gold collide like waves crashing against an unseen shore. This piece channels the raw, untamed energy of the ocean — wild, unpredictable, and endlessly alive. A celebration of colour in its most expressive form.</p>
+        </section>
+
+        <!-- Installation 4: Waivy Colors -->
+        <section id="art4p">
+          <h2>Waivy Colors</h2>
+          <section id="art4"></section>
+          <p class="artp">Fluid ribbons of yellow, black, and teal weave together in a dance of organic rhythm. The undulating forms suggest both movement and calm, as if colour itself has found a natural current to follow. A piece that breathes with every glance.</p>
+        </section>
+
+        <!-- Installation 5: Dotted Splash -->
+        <section id="art5p">
+          <h2>Dotted splash</h2>
+          <section id="art5"></section>
+          <p class="artp">Bold splashes of orange and black burst across the canvas, punctuated by playful circular accents. The raw energy of this piece feels spontaneous and alive — as though captured mid-motion, freezing a single explosive moment of creative force.</p>
+        </section>
+
+        <!-- Installation 6: Starligt Favorit -->
+        <section id="art6p">
+          <h2>Starligt favorit</h2>
+          <section id="art6"></section>
+          <p class="artp">Warm golden light radiates outward through layers of burnt orange and deep ochre, evoking the quiet glow of a setting sun on the horizon. This piece carries a sense of warmth and nostalgia — a familiar light seen through an entirely new lens.</p>
+        </section>
+
+        <!-- Installation 7: Dark Souls -->
+        <section id="art7p">
+          <h2>Dark souls</h2>
+          <section id="art7"></section>
+          <p class="artp">Deep navy and midnight black swirl together in a turbulent vortex of emotion and shadow. This haunting composition speaks to the complexity of the human spirit — the weight we carry, the depths we explore, and the beauty that can emerge from darkness.</p>
+        </section>
+
+        <!-- Installation 8: Happy Cat -->
+        <section id="art8p">
+          <h2>Happy cat</h2>
+          <section id="art8"></section>
+          <p class="artp">A joyful explosion of pink, blue, and yellow shapes dance freely across the canvas, radiating playfulness and light. This vibrant piece captures the pure, uncomplicated happiness of a carefree moment — colour as an expression of delight in its simplest form.</p>
+        </section>
+
+      </section>
+
     </main>
+
+    <!-- ==========================================================================
+       4. SIDFOT
+       Upphovsrättsinformation och ägandeinformation
+       ========================================================================== -->
     <footer>
-      <p id="copy1"> Auerum 2026 &copy; is Owned and Managed by Sulan AB Sweden </p>
+      <p id="copy1">Auerum 2026 &copy; is Owned and Managed by Sulan AB Sweden</p>
     </footer>
+
+    <!-- ==========================================================================
+       5. JAVASCRIPT
+       Menyväxling för hamburgarmeny
+       ========================================================================== -->
     <script src="menutoggle.js"></script>
+
   </body>
 </html>

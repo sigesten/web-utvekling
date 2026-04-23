@@ -47,6 +47,11 @@ h1, h2, .logo {
   border-radius: 10px;
 }
 
+#h2auerum{
+  text-decoration: none;
+  color: #000060;
+}
+
 .menu {
   list-style: none;
   display: flex;
@@ -130,7 +135,6 @@ h1 {
   margin-top: 20px;
   padding: 8vh 10px;
   background: aliceblue;
-  border: #000060 2px solid;
   border-radius: 5px;
 }
 
@@ -144,7 +148,6 @@ h1 {
 #bildP {
   margin-top: 10px;
   height: 40vh;
-  border: #000060 2px solid;
   border-radius: 5px;
   background-image: url(../images/Gemini_Generated_Image_ehxohkehxohkehxo.png);
   background-size: cover;

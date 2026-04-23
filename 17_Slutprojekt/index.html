@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="sv">
+
+  <!-- ==========================================================================
+     1. HEAD & METADATA
+     Teckenkodning, viewport, sidtitel och externa resurser
+     ========================================================================== -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auerum</title>
+
+    <!-- Google Fonts förhandsanslutning för snabbare laddning -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Extern stilmall -->
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
 
+    <!-- ==========================================================================
+       2. NAVIGERING
+       Toppmeny med logotyp, navigeringslänkar och hamburgarmeny för mobil
+       ========================================================================== -->
     <nav class="navbar">
-      <div class="logo"><h2 id="h2A">Auerum</h2></div>
 
-      
+      <!-- Logotyp / länk till startsidan -->
+      <div class="logo">
+        <a href="index.html" id="h2auerum">
+          <h2 id="h2A">Auerum</h2>
+        </a>
+      </div>
 
+      <!-- Huvudmeny med navigeringslänkar -->
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="AboutUS/aboutUS.html">About us</a></li>
@@ -22,34 +41,62 @@
         <li><a href="ContactUS/contact.html">Contact us</a></li>
       </ul>
 
+      <!-- Hamburgarmeny-knapp för mobila enheter -->
       <button class="menu-toggle" aria-expanded="false" aria-label="Öppna meny">
         <div id="hamburgare"></div>
       </button>
+
     </nav>
+
+    <!-- ==========================================================================
+       3. HUVUDINNEHÅLL
+       Hero-rubrik, introduktionstext och bildspel med konstverk
+       ========================================================================== -->
     <main>
-        <h1>Welcome to modern art</h1>
-        <p id="newart"> Explore the vast reality of modern art and dive deep in to exploring our latest art instalments today!</p>
-        <section id="main_bilder">
-          <div class="slides">
-            <div class="slide active"><img src="images/art1.avif" alt="bild 1"></div>
-            <div class="slide"><img src="images/art2.avif" alt="bild 2"></div>
-            <div class="slide"><img src="images/art3.avif" alt="bild 3"></div>
-            <div class="slide"><img src="images/art4.avif" alt="bild 4"></div>
-            <div class="slide"><img src="images/art5.avif" alt="bild 5"></div>
-            <div class="slide"><img src="images/art6.avif" alt="bild 6"></div>
-            <div class="slide"><img src="images/art7.avif" alt="bild 7"></div>
-            <div class="slide"><img src="images/art8.avif" alt="bild 8"></div>
-          </div>
-  
-          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-          <button class="next" onclick="changeSlide(1)">&#10095;</button>
-        </section>
+
+      <!-- Hero-rubrik och introduktionstext -->
+      <h1>Welcome to modern art</h1>
+      <p id="newart">
+        Explore the vast reality of modern art and dive deep in to exploring our latest art instalments today!
+      </p>
+
+      <!-- Bildspel med konstverk -->
+      <section id="main_bilder">
+
+        <!-- Bildspels-slides -->
+        <div class="slides">
+          <div class="slide active"><img src="images/art1.avif" alt="bild 1"></div>
+          <div class="slide"><img src="images/art2.avif" alt="bild 2"></div>
+          <div class="slide"><img src="images/art3.avif" alt="bild 3"></div>
+          <div class="slide"><img src="images/art4.avif" alt="bild 4"></div>
+          <div class="slide"><img src="images/art5.avif" alt="bild 5"></div>
+          <div class="slide"><img src="images/art6.avif" alt="bild 6"></div>
+          <div class="slide"><img src="images/art7.avif" alt="bild 7"></div>
+          <div class="slide"><img src="images/art8.avif" alt="bild 8"></div>
+        </div>
+
+        <!-- Navigeringsknappar för bildspelet -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+      </section>
 
     </main>
+
+    <!-- ==========================================================================
+       4. SIDFOT
+       Upphovsrättsinformation och ägandeinformation
+       ========================================================================== -->
     <footer>
-      <p id="copy1"> Auerum 2026 &copy; is Owned and Managed by Sulan AB Sweden <p>
+      <p id="copy1">Auerum 2026 &copy; is Owned and Managed by Sulan AB Sweden</p>
     </footer>
+
+    <!-- ==========================================================================
+       5. JAVASCRIPT
+       Menyväxling för hamburgarmeny och bildspels-logik
+       ========================================================================== -->
     <script src="menutoggle.js"></script>
     <script src="slider.js"></script>
+
   </body>
 </html>
