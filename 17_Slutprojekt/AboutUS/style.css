@@ -229,7 +229,7 @@ footer {
 
   .mainP1, .mainP2, .mainP3, .mainP4{
     font-size: large;
-    padding: 5vh 5vh 5vh 5vh;
+    padding: 5vh 0vh 5vh 0vh;
     text-align: left;
   }
 
